@@ -1,4 +1,4 @@
-FROM Tomcat:latest
+FROM tomcat:latest
 RUN apt update
 RUN apt install -y maven, default-jdk
 RUN mkdir -p /build
