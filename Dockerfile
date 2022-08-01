@@ -7,7 +7,7 @@ WORKDIR /build
 COPY boxfuse-sample-java-war-hello/ /build
 RUN mvn -B dependency:resolve dependency:resolve-plugins
 #COPY src /build/src
-RUN mvn package
+RUN mvn clean package
 RUN ls
 
 #
