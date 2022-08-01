@@ -7,7 +7,7 @@ COPY pom.xml /build
 COPY src /build/src
 RUN mvn clean package
 RUN ls -R
-RUN cp target/hello-1.0.war /var/lib/tomcat9/webapps
+RUN cp target/hello-1.0.war /usr/local/tomcat/webapps/
 RUN ls -R
 
 EXPOSE 8080
