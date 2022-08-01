@@ -10,7 +10,6 @@ COPY src /build/src
 RUN ls -R
 RUN mvn clean package
 RUN ls -R
-
 #
 # Publish Stage
 #
