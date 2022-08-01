@@ -7,7 +7,7 @@ RUN ls -R
 COPY pom.xml /build
 COPY src /build/src
 RUN ls -R
-RUN mvn -B dependency:resolve dependency:resolve-plugins
+#RUN mvn -B dependency:resolve dependency:resolve-plugins
 RUN mvn clean package
 RUN ls -R
-EXPOSE 8080
+#EXPOSE 8080
