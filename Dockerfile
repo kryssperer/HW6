@@ -9,7 +9,7 @@ COPY pom.xml /build
 COPY src /build/src
 RUN ls -R
 RUN mvn clean package
-RUN ls -Rdoc
+RUN ls -R
 
 #
 # Publish Stage
