@@ -1,1 +1,14 @@
-FROM ubuntu:20.04
+#
+# Build stage
+#
+FROM maven:3.8.6-jdk-11
+
+#
+# Package Stage
+#
+
+#
+# Publish Stage
+#
+
+
